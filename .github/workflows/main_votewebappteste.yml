@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: primeiroacr.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_8b3e4b9fe592434c88f5f9a981ca7ac1 }}/azure-vote-front:${{ github.sha }}
+        tags: primeiroacr.azurecr.io/azure-vote-front:V1
         file: ./Dockerfile
 
   deploy:
